@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">bePansement</string>
+    <string name="smartsens">Smartsens</string>
+    <string name="blabla_email_com">blabla@email.com</string>
+    <string name="xxxxxxxxxxx">xxxxxxxxxxx</string>
+    <string name="connexion">Connexion</string>
+    <string name="valider">Valider</string>
+    <string name="annuler">Annuler</string>
+    <string name="todo">TODO</string>
+    <string name="bienvenue">Bienvenue !</string>
+    <string name="graphiques">Graphiques</string>
 </resources>

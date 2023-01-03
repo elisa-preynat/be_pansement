@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectionType">
+
+    <TextView
+        android:id="@+id/typeDeConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/mada_black"
+        android:text="Type de connexion"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icn_connexion_typeDeCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/typeDeConnexion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_online_prediction_60" />
+
+    <Button
+        android:id="@+id/btn_nfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightBlueApp"
+        android:text="NFC"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/darkBlueApp"
+        app:strokeWidth="10px"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <Button
+        android:id="@+id/btn_bluetooth"
+        android:layout_width="116dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="131dp"
+        android:backgroundTint="@color/lightBlueApp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_bluetooth_connected_80"
+        app:iconTint="@color/darkBlueApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeDeConnexion"
+        app:strokeColor="@color/darkBlueApp"
+        app:strokeWidth="10px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
