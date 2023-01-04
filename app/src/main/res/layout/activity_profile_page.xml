@@ -13,17 +13,203 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="27dp"
         android:fontFamily="@font/mada_black"
-        android:text="Votre Profil"
+        android:text="@string/votre_profil"
         android:textColor="@color/darkBlueApp"
         android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/mada_black"
+        android:text="@string/nom"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_VotreProfil" />
+
+    <TextView
+        android:id="@+id/txt_Prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/mada_black"
+        android:text="@string/pr_nom"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_PrenomBlabla"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Nom" />
+
+    <TextView
+        android:id="@+id/txt_DateDeNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/mada_black"
+        android:text="@string/date_de_naissance"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Prenom" />
+
+    <TextView
+        android:id="@+id/txt_AdresseEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mada_black"
+        android:text="@string/adresse_email"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_DateDeNaissanceXX_XX_XX" />
+
+    <TextView
+        android:id="@+id/txt_NumeroDeTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mada_black"
+        android:text="@string/num_ro_de_t_l_phone"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AdresseEmailExemple" />
+
+    <TextView
+        android:id="@+id/txt_Adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mada_black"
+        android:text="@string/adresse"
+        android:textColor="@color/darkBlueApp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_NumeroDeTelExemple" />
+
+    <TextView
+        android:id="@+id/txt_PrenomBlabla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="184dp"
+        android:fontFamily="@font/mada_semibold"
+        android:text="@string/blabla2"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_NomBLABLA" />
+
+    <TextView
+        android:id="@+id/txt_DateDeNaissanceXX_XX_XX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mada_semibold"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="@string/xx_xx_xx"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_DateDeNaissance" />
+
+    <TextView
+        android:id="@+id/txt_AdresseEmailExemple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mada_semibold"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="@string/exemple_email_com"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AdresseEmail" />
+
+    <TextView
+        android:id="@+id/txt_NumeroDeTelExemple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mada_semibold"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:text="@string/_06_01_02_03_04"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_NumeroDeTel" />
+
+    <TextView
+        android:id="@+id/txt_AdresseExemple"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/mada_semibold"
+        android:text="@string/xx_chemin_de_xxxx"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Adresse" />
+
+    <TextView
+        android:id="@+id/txt_AdresseExempleComplement"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/mada_semibold"
+        android:text="@string/_12345_ville"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AdresseExemple" />
+
+    <TextView
+        android:id="@+id/txt_NomBLABLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/mada_semibold"
+        android:text="@string/blabla"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/txt_Nom"
+        app:layout_constraintTop_toBottomOf="@+id/txt_VotreProfil" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_person_pin_24"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:ignore="ImageContrastCheck,ImageContrastCheck"
+        android:contentDescription="TODO" />
 </androidx.constraintlayout.widget.ConstraintLayout>

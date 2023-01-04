@@ -9,4 +9,18 @@
     <string name="todo">TODO</string>
     <string name="bienvenue">Bienvenue !</string>
     <string name="graphiques">Graphiques</string>
+    <string name="blabla">BLABLA</string>
+    <string name="exemple_email_com">exemple@email.com</string>
+    <string name="xx_xx_xx">XX/XX/XX</string>
+    <string name="num_ro_de_t_l_phone">Numéro de téléphone</string>
+    <string name="date_de_naissance">Date de naissance</string>
+    <string name="blabla2">Blabla</string>
+    <string name="adresse_email">Adresse email</string>
+    <string name="votre_profil">Votre Profil</string>
+    <string name="_06_01_02_03_04">06 01 02 03 04</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="xx_chemin_de_xxxx">XX Chemin de XXXX</string>
+    <string name="_12345_ville">12345 Ville</string>
+    <string name="adresse">Adresse</string>
 </resources>

@@ -36,15 +36,19 @@
         android:id="@+id/btn_nfc"
         android:layout_width="110dp"
         android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/lightBlueApp"
         android:textAllCaps="false"
         app:cornerRadius="20dp"
         app:icon="@drawable/ic_baseline_nfc_80"
         app:iconTint="@color/darkBlueApp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_NFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/darkBlueApp"
         app:strokeWidth="10px"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="346dp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_bluetooth"
@@ -60,18 +64,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/typeDeConnexion"
         app:strokeColor="@color/darkBlueApp"
-        app:strokeWidth="10px" />
+        app:strokeWidth="10px"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txt_NFC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
         android:fontFamily="@font/mada_black"
         android:text="NFC"
         android:textColor="@color/darkBlueApp"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="466dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txt_Bluetooth"
@@ -81,7 +88,11 @@
         android:text="Bluetooth"
         android:textColor="@color/darkBlueApp"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="274dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_nfc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bluetooth"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
